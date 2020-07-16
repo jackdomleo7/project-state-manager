@@ -11,10 +11,20 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import { DataTableHeader } from "vuetify/types";
+
+interface Dessert {
+  name: string;
+  calories: number;
+  fat: number;
+  carbs: number;
+  protein: number;
+  iron: string;
+}
 
 @Component
 export default class Home extends Vue {
-  private readonly headers = [
+  private readonly headers: DataTableHeader[] = [
     {
       text: "Dessert (100g serving)",
       align: "start",
@@ -27,7 +37,7 @@ export default class Home extends Vue {
     { text: "Protein (g)", value: "protein" },
     { text: "Iron (%)", value: "iron" }
   ];
-  private readonly desserts = [
+  private readonly desserts: Dessert[] = [
     {
       name: "Frozen Yogurt",
       calories: 159,
