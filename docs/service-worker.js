@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/project-state-manager/precache-manifest.301bc1569d4aab929b3d1966d4c703f4.js"
+  "/project-state-manager/precache-manifest.125223f3a44ffdd9f1dd53041b52b04b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "project-state-manager"});
